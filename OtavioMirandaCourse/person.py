@@ -45,3 +45,8 @@ class Person:
         else:
             self.speaking = False
             print(f'{self.name} stopped speaking.')
+
+    @classmethod
+    def by_birth_year(cls, name, birth_year):
+        age = cls.current_year - birth_year
+        return cls(name, age)
