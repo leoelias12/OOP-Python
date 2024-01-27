@@ -57,3 +57,4 @@ class Person:
     def new_id():
         id = randint(1000, 9999)
         return id
+
