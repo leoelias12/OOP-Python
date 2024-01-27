@@ -1,3 +1,5 @@
+from random import randint
+
 class Person:
     current_year = 2023
 
@@ -50,3 +52,8 @@ class Person:
     def by_birth_year(cls, name, birth_year):
         age = cls.current_year - birth_year
         return cls(name, age)
+
+    @staticmethod
+    def new_id():
+        id = randint(1000, 9999)
+        return id
